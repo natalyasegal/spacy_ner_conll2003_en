@@ -1,5 +1,5 @@
 # spacy_ner_conll2003_en
-##The project contain the following notebooks:
+### The project contain the following notebooks:
 
 - parse_data.ipynb - heavy notebook, it's results are stored in data directory, so that you can start from the explore_data.ipynb
 - explore_data.ipynb - lighweight notebook with data exploration
