@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # install the only library we really need for this, version should match one used for training
-RUN pip install spacy==v2.2
+RUN pip install spacy==v2.2.4
 
 # install spacy's english words
 RUN python -m spacy download en 
