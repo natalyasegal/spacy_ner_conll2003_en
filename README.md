@@ -26,9 +26,10 @@ curl http://0.0.0.0:5000/inp_text=Daniel%20is%20travelling%20to%20US
 
 
 ## If you need to stop and remove other containers that take the ports above:
-docker ps
-docker stop container_id
-docker rm  container_id
+- docker ps
+- docker stop container_id
+- docker rm  container_id
 
-## If there any problem and you'd like to view cintainer logs (container_id is taken from docker ps):
-docker logs container_id
+## If there any problem and you'd like to view cintainer logs 
+- note: container_id is taken from docker ps
+- docker logs container_id
