@@ -7,13 +7,16 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# install the only library we really need for this, version should match one used for training
-RUN pip install spacy==v2.2.4
+# install dependencies
+RUN pip install -r requirements.txt
 
 # install spacy's english words
 RUN python -m spacy download en 
 
-# Deploy or model
+# expose port
+EXPOSE 5000
+
+# Deploy our model
 RUN tar -xzf /app/en_model-0.0.0.tar.gz
 
 # Run your application!
